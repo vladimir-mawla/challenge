@@ -41,16 +41,3 @@ blue.addEventListener('click', function handleClick() {
   console.log('blue clicked');
   blue_audio.play();
 });
-
-
-/*
-if (blue) {
-  blue.preventDefault();
-  alert('done')
-}
-function playSound() {
-    var sound = document.getElementById("audio");
-    sound.play();
-}
-?
-*/
