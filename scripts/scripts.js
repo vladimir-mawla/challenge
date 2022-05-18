@@ -44,3 +44,10 @@ blue.addEventListener('click', function handleClick() {
 
 
 let array =[]
+let x = Math.floor(Math.random() * 4) +1
+console.log(x)
+if(x) {
+    green_audio.play();
+}
+array.push(x)
+
