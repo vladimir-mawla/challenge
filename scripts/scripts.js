@@ -56,6 +56,7 @@ document.body.addEventListener('keydown', function (e) {
     
 
     let array =[]
+    let clicked_array = []
     let x = Math.floor(Math.random() * 4) +1
     console.log(x)
     if(x==1) {
@@ -75,6 +76,23 @@ document.body.addEventListener('keydown', function (e) {
       highlight(document.getElementById("blue"))
     }
     array.push(x)
-    console.log(array)
-
+    
+    if(document.getElementById("green").clicked == true)
+    {
+      console.log("success")
+      clicked_array.push("1");
+    }
+    if(document.getElementById("red").clicked == true)
+    {
+      clicked_array.push("2");
+    }
+    if(document.getElementById("yellow").clicked == true)
+    {
+      clicked_array.push("3");
+    }
+    if(document.getElementById("blue").clicked == true)
+    {
+      clicked_array.push("4");
+    }
+    console.log(clicked_array)
 });
