@@ -6,15 +6,27 @@
 #green {
     background-color: green;
 }
+#green:hover {
+    background-color:grey;
+  }
 #red {
     background-color: red;
 }
+#red:hover {
+    background-color:grey;
+  }
 #yellow {
     background-color: yellow;
 }
+#yellow:hover {
+    background-color:grey;
+  }
 #blue {
     background-color: blue;
 }
+#blue:hover {
+    background-color:grey;
+  }
 button {
     height: 150px;
     width: 150px;
@@ -32,8 +44,14 @@ button {
     flex-direction: row;
     justify-content: center;
 }
+.first-row div {
+    padding: 10px;
+}
 .second-row{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.second-row div {
+    padding: 10px;
 }
