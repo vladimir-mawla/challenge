@@ -49,8 +49,17 @@ document.body.addEventListener('keydown', function (e) {
     let array =[]
     let x = Math.floor(Math.random() * 4) +1
     console.log(x)
-    if(x) {
+    if(x==1) {
       green_audio.play();
+    }
+    else if(x==2) {
+      red_audio.play();
+    }
+    else if(x==3) {
+      yellow_audio.play();
+    }
+    else if(x==4) {
+      blue_audio.play();
     }
     array.push(x)
 
