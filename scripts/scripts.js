@@ -41,3 +41,6 @@ blue.addEventListener('click', function handleClick() {
   console.log('blue clicked');
   blue_audio.play();
 });
+
+
+let array =[]
