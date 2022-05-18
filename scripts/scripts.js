@@ -76,7 +76,11 @@ document.body.addEventListener('keydown', function (e) {
       highlight(document.getElementById("blue"))
     }
     array.push(x)
-    
+
+    const click_green = document.getElementById("green")
+    click_green.addEventListener("click", () => {
+      alert('hello');
+    });
     if(document.getElementById("green").clicked == true)
     {
       console.log("success")
