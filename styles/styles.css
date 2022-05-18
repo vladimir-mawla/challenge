@@ -67,3 +67,14 @@ button {
 .second-row div {
     padding: 10px;
 }
+@font-face {
+    font-family: gameplay;
+    src: url(./fonts/PressStart2P-Regular.ttf) format('truetype');
+}
+h1 {
+    font-family: gameplay;
+    color: rgb(240, 252, 163);
+    text-align: center;
+    padding-bottom: 70px;
+    font-size: 40px;
+}
