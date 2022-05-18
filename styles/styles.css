@@ -6,26 +6,38 @@
 #green {
     background-color: green;
 }
-#green:hover {
-    background-color:grey;
+#green:active {
+    background-color:rgb(161, 161, 161);
+    border-width: 1px;
+    border-color: aliceblue;
+    border-style: solid;
   }
 #red {
     background-color: red;
 }
-#red:hover {
-    background-color:grey;
+#red:active {
+    background-color:rgb(161, 161, 161);
+    border-width: 1px;
+    border-color: aliceblue;
+    border-style: solid;
   }
 #yellow {
     background-color: yellow;
 }
-#yellow:hover {
-    background-color:grey;
+#yellow:active {
+    background-color:rgb(161, 161, 161);
+    border-width: 1px;
+    border-color: aliceblue;
+    border-style: solid;
   }
 #blue {
     background-color: blue;
 }
-#blue:hover {
-    background-color:grey;
+#blue:active {
+    background-color:rgb(161, 161, 161);
+    border-width: 1px;
+    border-color: aliceblue;
+    border-style: solid;
   }
 button {
     height: 150px;
