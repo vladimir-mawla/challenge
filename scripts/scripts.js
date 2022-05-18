@@ -1,3 +1,11 @@
+function highlight(obj){
+  var orig = obj.style.backgroundColor;
+  obj.style.backgroundColor = 'white';
+  setTimeout(function(){
+       obj.style.backgroundColor = orig;
+  }, 300);
+}
+
 document.body.addEventListener('keydown', function (e) {
   console.log('Hi Vlad!');
 
@@ -44,23 +52,29 @@ document.body.addEventListener('keydown', function (e) {
       console.log('blue clicked');
       blue_audio.play();
     });
-
+    
+    
 
     let array =[]
     let x = Math.floor(Math.random() * 4) +1
     console.log(x)
     if(x==1) {
       green_audio.play();
+      highlight(document.getElementById("green"))
     }
     else if(x==2) {
       red_audio.play();
+      highlight(document.getElementById("red"))
     }
     else if(x==3) {
       yellow_audio.play();
+      highlight(document.getElementById("yellow"))
     }
     else if(x==4) {
       blue_audio.play();
+      highlight(document.getElementById("blue"))
     }
     array.push(x)
+    console.log(array)
 
 });
