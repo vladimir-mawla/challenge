@@ -28,7 +28,13 @@ const blue = document.getElementById('blue');
 blue.addEventListener('click', function handleClick() {
   console.log('blue clicked');
 });
+
+
 /*
+if (blue) {
+  blue.preventDefault();
+  alert('done')
+}
 function playSound() {
     var sound = document.getElementById("audio");
     sound.play();
