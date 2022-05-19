@@ -66,26 +66,7 @@ document.body.addEventListener('keydown', function (e) {
 
     
     
-    if(x==1) {
-      green_audio.play();
-      highlight(document.getElementById("green"))
-      array.push(x)
-    }
-    else if(x==2) {
-      red_audio.play();
-      highlight(document.getElementById("red"))
-      array.push(x)
-    }
-    else if(x==3) {
-      yellow_audio.play();
-      highlight(document.getElementById("yellow"))
-      array.push(x)
-    }
-    else if(x==4) {
-      blue_audio.play();
-      highlight(document.getElementById("blue"))
-      array.push(x)
-    }
+    
     
 
     if (green.addEventListener("click", () => {
@@ -107,4 +88,27 @@ function Start() {
   let x = Math.floor(Math.random() * 4) +1;
   array.push(x);
   document.getElementById("text").innerHTML = "LEVEL 1"
+}
+
+function play_button(x) {
+  if(x==1) {
+    green_audio.play();
+    highlight(document.getElementById("green"))
+    array.push(x)
+  }
+  else if(x==2) {
+    red_audio.play();
+    highlight(document.getElementById("red"))
+    array.push(x)
+  }
+  else if(x==3) {
+    yellow_audio.play();
+    highlight(document.getElementById("yellow"))
+    array.push(x)
+  }
+  else if(x==4) {
+    blue_audio.play();
+    highlight(document.getElementById("blue"))
+    array.push(x)
+  }
 }
