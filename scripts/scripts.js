@@ -98,5 +98,4 @@ document.body.addEventListener('keydown', function (e) {
       clicked_array.push("4");
       console.log(clicked_array)
     }));
-    console.log(array)
 });
