@@ -59,17 +59,17 @@ function play_button(x) {
 /* Adding function to record played sounds */
 function clicked_button() {
   if (green.addEventListener("click", () => {
+    green_audio.play();
     clicked_array.push("1");
-    console.log(clicked_array)
   })); else if (red.addEventListener("click", () => {
+    red_audio.play();
     clicked_array.push("2");
-    console.log(clicked_array)
   })); else if (yellow.addEventListener("click", () => {
+    yellow_audio.play();
     clicked_array.push("3");
-    console.log(clicked_array)
   })); else if (blue.addEventListener("click", () => {
+    blue_audio.play();
     clicked_array.push("4");
-    console.log(clicked_array)
   }));
 }
 
