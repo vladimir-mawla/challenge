@@ -35,6 +35,7 @@ function start() {
   document.getElementById("text").innerHTML = "LEVEL 1"
 }
 
+/* Adding function to play random sounds */
 function play_button(x) {
   if(x==1) {
     green_audio.play();
@@ -54,6 +55,7 @@ function play_button(x) {
     array.push(x)
   }}
 
+/* Adding function to record played sounds */
 function clicked_button() {
   if (green.addEventListener("click", () => {
     clicked_array.push("1");
