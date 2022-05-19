@@ -71,3 +71,12 @@ function clicked_button() {
     console.log(clicked_array)
   }));
 }
+
+/* Adding function to check if clicked_array is true */
+function checker(x) {
+  if ((array.length == clicked_array.length) && (array[x] == clicked_array[x])){
+      start()
+  } else {
+    return;
+  }
+}
