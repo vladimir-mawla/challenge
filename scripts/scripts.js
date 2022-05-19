@@ -93,4 +93,5 @@ function game_over() {
   wrong_audio.play();
   level = 0;
   document.getElementById("text").innerHTML = "Game Over";
+  clicked_array = [];
 }
