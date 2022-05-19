@@ -34,6 +34,7 @@ function start() {
   level += 1;
   document.getElementById("text").innerHTML = "LEVEL " + level;
   play_button(x)
+  clicked_array = []
 }
 
 /* Adding function to play random sounds */
