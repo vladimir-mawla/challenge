@@ -13,6 +13,9 @@ var yellow_audio = new Audio("./sounds/yellow.mp3");
 var blue_audio = new Audio("./sounds/blue.mp3");
 var wrong_audio = new Audio("./sounds/wrong.mp3")
 
+/* Initializing arrays*/
+let array =[]
+let clicked_array = []
 
 document.body.addEventListener('keydown', function (e) {
   console.log('Hi Vlad!');
@@ -59,8 +62,7 @@ document.body.addEventListener('keydown', function (e) {
     
     
 
-    let array =[]
-    let clicked_array = []
+    
     let x = Math.floor(Math.random() * 4) +1
     console.log(x)
     if(x==1) {
