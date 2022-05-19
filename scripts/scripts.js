@@ -17,6 +17,9 @@ var wrong_audio = new Audio("./sounds/wrong.mp3")
 let array =[]
 let clicked_array = []
 
+/* Adding a level variable*/
+var level =0;
+
 document.body.addEventListener('keydown', function (e) {
   console.log('Hi Vlad!');
 
