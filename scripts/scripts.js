@@ -31,8 +31,8 @@ document.body.addEventListener('keydown', function (e) {
 /* Adding function to initialize the game */
 function start() {
   let x = Math.floor(Math.random() * 4) +1;
-  array.push(x);
   document.getElementById("text").innerHTML = "LEVEL 1"
+  play_button(x)
 }
 
 /* Adding function to play random sounds */
