@@ -62,20 +62,24 @@ document.body.addEventListener('keydown', function (e) {
     if(x==1) {
       green_audio.play();
       highlight(document.getElementById("green"))
+      array.push(x)
     }
     else if(x==2) {
       red_audio.play();
       highlight(document.getElementById("red"))
+      array.push(x)
     }
     else if(x==3) {
       yellow_audio.play();
       highlight(document.getElementById("yellow"))
+      array.push(x)
     }
     else if(x==4) {
       blue_audio.play();
       highlight(document.getElementById("blue"))
+      array.push(x)
     }
-    array.push(x)
+    
 
     const click_green = document.getElementById("green")
     const click_red = document.getElementById("red")
@@ -95,6 +99,5 @@ document.body.addEventListener('keydown', function (e) {
       clicked_array.push("4");
       console.log(clicked_array)
     }));
-
-    
+    console.log(array)
 });
