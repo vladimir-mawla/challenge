@@ -26,9 +26,9 @@ var level =0;
 /* Starting game on keyboard click */
 document.body.addEventListener('keydown', function (e) {
   if(game == false){
-    game = true;
-    start()
-    clicked_button()
+      game = true;
+      start()
+      clicked_button()
   }
 
 });
@@ -104,5 +104,6 @@ function game_over() {
   level = 0;
   document.getElementById("text").innerHTML = "Game Over, Press Any Key To Restart";
   array = [];
+  clicked_array =[]
   game = false;
 }
