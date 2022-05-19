@@ -81,7 +81,7 @@ function clicked_button() {
 function checker(x) {
   if ((array.length == clicked_array.length) && (array[x] == clicked_array[x])){
     setTimeout(function() {
-      Start();
+      start();
     }, 1000);
   } else {
     game_over();
