@@ -16,14 +16,18 @@ var wrong_audio = new Audio("./sounds/wrong.mp3")
 /* Initializing arrays*/
 let array =[]
 let clicked_array = []
+var game = false
 
 /* Adding a level variable*/
 var level =0;
 
 /* Starting game on keyboard click */
 document.body.addEventListener('keydown', function (e) {
-  start()
-  clicked_button()
+  if(game == false){
+    game = true;
+    start()
+    clicked_button()
+  }
 
 });
   
@@ -34,7 +38,6 @@ function start() {
   level += 1;
   document.getElementById("text").innerHTML = "LEVEL " + level;
   play_button(x)
-  clicked_array = []
 }
 
 /* Adding function to play random sounds */
@@ -55,7 +58,8 @@ function play_button(x) {
     blue_audio.play();
     highlight(document.getElementById("blue"))
     array.push(x)
-  }}
+  }
+}
 
 /* Adding function to record played sounds */
 function clicked_button() {
@@ -95,4 +99,5 @@ function game_over() {
   level = 0;
   document.getElementById("text").innerHTML = "Game Over, Press Any Key To Restart";
   clicked_array = [];
+  game = false;
 }
