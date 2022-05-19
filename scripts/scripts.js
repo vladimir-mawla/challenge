@@ -87,10 +87,12 @@ function clicked_button() {
 
 /* Adding function to check if clicked_array is true */
 function checker(x) {
-  if ((array.length == clicked_array.length) && (array[x] == clicked_array[x])){
-    setTimeout(function() {
-      start();
-    }, 1000);
+  if (array[x] == clicked_array[x]){
+    if (array.length == clicked_array.length){
+      setTimeout(function() {
+        start();
+      }, 1000);
+  }
   } else {
     game_over();
   }
