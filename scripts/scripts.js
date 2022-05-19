@@ -92,6 +92,6 @@ function checker(x) {
 function game_over() {
   wrong_audio.play();
   level = 0;
-  document.getElementById("text").innerHTML = "Game Over";
+  document.getElementById("text").innerHTML = "Game Over, Press Any Key To Restart";
   clicked_array = [];
 }
