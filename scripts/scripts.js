@@ -23,56 +23,11 @@ var level =0;
 document.body.addEventListener('keydown', function (e) {
   console.log('Hi Vlad!');
 
-    window.addEventListener('keydown', (event) => {
-      if(event) {
-        event.preventDefault();
-      }
     });
+  
 
 
-
-    
-
-    const green = document.getElementById('green');
-
-    green.addEventListener('click', function handleClick() {
-      console.log('green clicked');
-      green_audio.play();
-
-    });
-
-    const red = document.getElementById('red');
-
-    red.addEventListener('click', function handleClick() {
-      console.log('red clicked');
-      red_audio.play();
-    });
-
-    const yellow = document.getElementById('yellow');
-
-    yellow.addEventListener('click', function handleClick() {
-      console.log('yellow clicked');
-      yellow_audio.play();
-    });
-
-    const blue = document.getElementById('blue');
-
-    blue.addEventListener('click', function handleClick() {
-      console.log('blue clicked');
-      blue_audio.play();
-    });
-    
-    
-
-    
-    
-    
-    
-
-    
-});
-
-function Start() {
+function start() {
   let x = Math.floor(Math.random() * 4) +1;
   array.push(x);
   document.getElementById("text").innerHTML = "LEVEL 1"
