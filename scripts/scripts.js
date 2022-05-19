@@ -21,9 +21,10 @@ let clicked_array = []
 var level =0;
 
 document.body.addEventListener('keydown', function (e) {
-  console.log('Hi Vlad!');
+  start()
+  clicked_button()
 
-    });
+});
   
 
 
