@@ -69,19 +69,7 @@ document.body.addEventListener('keydown', function (e) {
     
     
 
-    if (green.addEventListener("click", () => {
-      clicked_array.push("1");
-      console.log(clicked_array)
-    })); else if (red.addEventListener("click", () => {
-      clicked_array.push("2");
-      console.log(clicked_array)
-    })); else if (yellow.addEventListener("click", () => {
-      clicked_array.push("3");
-      console.log(clicked_array)
-    })); else if (blue.addEventListener("click", () => {
-      clicked_array.push("4");
-      console.log(clicked_array)
-    }));
+    
 });
 
 function Start() {
@@ -111,4 +99,20 @@ function play_button(x) {
     highlight(document.getElementById("blue"))
     array.push(x)
   }
+}
+
+function clicked_button() {
+  if (green.addEventListener("click", () => {
+    clicked_array.push("1");
+    console.log(clicked_array)
+  })); else if (red.addEventListener("click", () => {
+    clicked_array.push("2");
+    console.log(clicked_array)
+  })); else if (yellow.addEventListener("click", () => {
+    clicked_array.push("3");
+    console.log(clicked_array)
+  })); else if (blue.addEventListener("click", () => {
+    clicked_array.push("4");
+    console.log(clicked_array)
+  }));
 }
