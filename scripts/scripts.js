@@ -18,20 +18,18 @@ var array =[]
 var clicked_array = []
 
 
-var game = false
 
 /* Adding a level variable*/
 var level =0;
 
 /* Starting game on keyboard click */
 document.body.addEventListener('keydown', function (e) {
-  if(game == false){
-      game = true;
+  
       start()
       clicked_button()
   }
 
-});
+);
   
 
 /* Adding function to initialize the game */
@@ -105,5 +103,5 @@ function game_over() {
   document.getElementById("text").innerHTML = "Game Over, Press Any Key To Restart";
   array = [];
   clicked_array =[]
-  game = false;
+  
 }
