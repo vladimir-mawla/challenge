@@ -82,12 +82,12 @@ function checker(x) {
   if ((array.length == clicked_array.length) && (array[x] == clicked_array[x])){
       start()
   } else {
-    alert("wrong");
+    game_over();
   }
 }
 
 /* Adding a function to end game*/
-function Game_over() {
+function game_over() {
   wrong_audio.play();
   level = 0;
   document.getElementById("text").innerHTML = "Game Over";
