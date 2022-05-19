@@ -6,6 +6,14 @@ function highlight(obj){
   }, 300);
 }
 
+/* SOUNDS*/
+var green_audio = new Audio("./sounds/green.mp3");
+var red_audio = new Audio("./sounds/red.mp3");
+var yellow_audio = new Audio("./sounds/yellow.mp3");
+var blue_audio = new Audio("./sounds/blue.mp3");
+var wrong_audio = new Audio("./sounds/wrong.mp3")
+
+
 document.body.addEventListener('keydown', function (e) {
   console.log('Hi Vlad!');
 
@@ -16,13 +24,9 @@ document.body.addEventListener('keydown', function (e) {
       }
     });
 
-    /*Audio*/
 
-    var green_audio = new Audio("./sounds/green.mp3");
-    var red_audio = new Audio("./sounds/red.mp3");
-    var yellow_audio = new Audio("./sounds/yellow.mp3");
-    var blue_audio = new Audio("./sounds/blue.mp3");
-    var wrong_audio = new Audio("./sounds/wrong.mp3")
+
+    
 
     const green = document.getElementById('green');
 
