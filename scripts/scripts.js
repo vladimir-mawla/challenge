@@ -23,7 +23,6 @@ document.body.addEventListener('keydown', function (e) {
     window.addEventListener('keydown', (event) => {
       if(event) {
         event.preventDefault();
-        document.getElementById("text").innerHTML = "LEVEL 1"
       }
     });
 
@@ -63,8 +62,7 @@ document.body.addEventListener('keydown', function (e) {
     
 
     
-    let x = Math.floor(Math.random() * 4) +1
-    console.log(x)
+    
     if(x==1) {
       green_audio.play();
       highlight(document.getElementById("green"))
@@ -101,3 +99,9 @@ document.body.addEventListener('keydown', function (e) {
       console.log(clicked_array)
     }));
 });
+
+function Start() {
+  let x = Math.floor(Math.random() * 4) +1;
+  array.push(x);
+  document.getElementById("text").innerHTML = "LEVEL 1"
+}
