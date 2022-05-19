@@ -14,8 +14,8 @@ var blue_audio = new Audio("./sounds/blue.mp3");
 var wrong_audio = new Audio("./sounds/wrong.mp3")
 
 /* Initializing arrays*/
-let array =[]
-let clicked_array = []
+var array =[]
+var clicked_array = []
 var game = false
 
 /* Adding a level variable*/
