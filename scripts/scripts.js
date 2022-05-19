@@ -85,21 +85,16 @@ document.body.addEventListener('keydown', function (e) {
     }
     
 
-    const click_green = document.getElementById("green")
-    const click_red = document.getElementById("red")
-    const click_yellow = document.getElementById("yellow")
-    const click_blue = document.getElementById("blue")
-
-    if (click_green.addEventListener("click", () => {
+    if (green.addEventListener("click", () => {
       clicked_array.push("1");
       console.log(clicked_array)
-    })); else if (click_red.addEventListener("click", () => {
+    })); else if (red.addEventListener("click", () => {
       clicked_array.push("2");
       console.log(clicked_array)
-    })); else if (click_yellow.addEventListener("click", () => {
+    })); else if (yellow.addEventListener("click", () => {
       clicked_array.push("3");
       console.log(clicked_array)
-    })); else if (click_blue.addEventListener("click", () => {
+    })); else if (blue.addEventListener("click", () => {
       clicked_array.push("4");
       console.log(clicked_array)
     }));
