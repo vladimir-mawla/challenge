@@ -16,6 +16,8 @@ var wrong_audio = new Audio("./sounds/wrong.mp3")
 /* Initializing arrays*/
 var array =[]
 var clicked_array = []
+
+
 var game = false
 
 /* Adding a level variable*/
@@ -37,6 +39,7 @@ function start() {
   let x = Math.floor(Math.random() * 4) +1;
   level += 1;
   document.getElementById("text").innerHTML = "LEVEL " + level;
+  clicked_array=[]
   play_button(x)
 }
 
@@ -66,19 +69,19 @@ function clicked_button() {
   if (green.addEventListener("click", () => {
     green_audio.play();
     clicked_array.push(1);
-    checker(array.length-1);
+    checker(clicked_array.length-1);
   })); else if (red.addEventListener("click", () => {
     red_audio.play();
     clicked_array.push(2);
-    checker(array.length-1);
+    checker(clicked_array.length-1);
   })); else if (yellow.addEventListener("click", () => {
     yellow_audio.play();
     clicked_array.push(3);
-    checker(array.length-1);
+    checker(clicked_array.length-1);
   })); else if (blue.addEventListener("click", () => {
     blue_audio.play();
     clicked_array.push(4);
-    checker(array.length-1);
+    checker(clicked_array.length-1);
   }));
 }
 
@@ -98,6 +101,6 @@ function game_over() {
   wrong_audio.play();
   level = 0;
   document.getElementById("text").innerHTML = "Game Over, Press Any Key To Restart";
-  clicked_array = [];
+  array = [];
   game = false;
 }
