@@ -20,6 +20,7 @@ let clicked_array = []
 /* Adding a level variable*/
 var level =0;
 
+/* Starting game on keyboard click */
 document.body.addEventListener('keydown', function (e) {
   start()
   clicked_button()
@@ -27,7 +28,7 @@ document.body.addEventListener('keydown', function (e) {
 });
   
 
-
+/* Adding function to initialize the game */
 function start() {
   let x = Math.floor(Math.random() * 4) +1;
   array.push(x);
@@ -39,23 +40,19 @@ function play_button(x) {
     green_audio.play();
     highlight(document.getElementById("green"))
     array.push(x)
-  }
-  else if(x==2) {
+  } else if(x==2) {
     red_audio.play();
     highlight(document.getElementById("red"))
     array.push(x)
-  }
-  else if(x==3) {
+  } else if(x==3) {
     yellow_audio.play();
     highlight(document.getElementById("yellow"))
     array.push(x)
-  }
-  else if(x==4) {
+  } else if(x==4) {
     blue_audio.play();
     highlight(document.getElementById("blue"))
     array.push(x)
-  }
-}
+  }}
 
 function clicked_button() {
   if (green.addEventListener("click", () => {
