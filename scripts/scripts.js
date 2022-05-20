@@ -103,5 +103,5 @@ function game_over() {
   array = [];
   clicked_array =[];
   document.body.removeEventListener('keydown', handler);
-  document.body.addEventListener('keydown', handler);
+  document.body.addEventListener('keydown', start);
 }
