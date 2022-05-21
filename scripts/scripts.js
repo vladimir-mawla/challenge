@@ -1,11 +1,3 @@
-function highlight(obj){
-  var orig = obj.style.backgroundColor;
-  obj.style.backgroundColor = 'white';
-  setTimeout(function(){
-       obj.style.backgroundColor = orig;
-  }, 300);
-}
-
 /* SOUNDS*/
 var green_audio = new Audio("./sounds/green.mp3");
 var red_audio = new Audio("./sounds/red.mp3");
@@ -29,7 +21,7 @@ var handler = function(e) {
 
 };
 document.body.addEventListener('keydown', handler)
-  
+
 
 /* Adding function to initialize the game */
 function start() {
@@ -39,6 +31,14 @@ function start() {
   document.getElementById("text").innerHTML = "LEVEL " + level;
   clicked_array=[]
   play_button(x)
+}
+
+function highlight(obj){
+  var orig = obj.style.backgroundColor;
+  obj.style.backgroundColor = 'white';
+  setTimeout(function(){
+       obj.style.backgroundColor = orig;
+  }, 300);
 }
 
 /* Adding function to play random sounds */
