@@ -33,6 +33,7 @@ document.body.addEventListener('keydown', handler)
 
 /* Adding function to initialize the game */
 function start() {
+  document.body.removeEventListener('keydown', handler);
   let x = Math.floor(Math.random() * 4) +1;
   level += 1;
   document.getElementById("text").innerHTML = "LEVEL " + level;
@@ -102,6 +103,6 @@ function game_over() {
   document.getElementById("text").innerHTML = "Game Over, Press Any Key To Restart";
   array = [];
   clicked_array =[];
-  document.body.removeEventListener('keydown', handler);
+  
   document.body.addEventListener('keydown', start);
 }
