@@ -25,6 +25,7 @@ document.body.addEventListener('keydown', handler)
 
 /* Adding function to initialize the game */
 function start() {
+  document.body.removeEventListener('keydown', start);
   document.body.removeEventListener('keydown', handler);
   let x = Math.floor(Math.random() * 4) +1;
   level += 1;
