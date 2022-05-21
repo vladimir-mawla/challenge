@@ -32,7 +32,7 @@ function start() {
   clicked_array=[]
   play_button(x)
 }
-
+/* Adding function to highlight color pressed*/
 function highlight(obj){
   var orig = obj.style.backgroundColor;
   obj.style.backgroundColor = 'white';
